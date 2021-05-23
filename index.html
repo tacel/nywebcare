@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Central-Aligned-Clear-Nav.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+
+    <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '158743855757884',
+            xfbml      : true,
+            version    : 'v10.0'
+          });
+          FB.AppEvents.logPageView();
+          FB.getLoginStatus(function(response) {
+    console.log(response);
+});
+
+        };
+      
+        (function(d, s, id){
+           var js, fjs = d.getElementsByTagName(s)[0];
+           if (d.getElementById(id)) {return;}
+           js = d.createElement(s); js.id = id;
+           js.src = "https://connect.facebook.net/en_US/sdk.js";
+           fjs.parentNode.insertBefore(js, fjs);
+         }(document, 'script', 'facebook-jssdk'));
+      </script>
+
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-light navbar-expand-md nav-distance">
+        <div class="container-fluid"><a class="navbar-brand" href="#">Amazing Nav</a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                id="navcol-1">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">FHomerst Item</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Second Item</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Third Item</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <h1>Heading</h1>
+        <h2>Heading</h2>
+    </section>
+    <section>
+        <div class="visa-cover d-flex flex-row-reverse"><a href="#" class="visa-link"><br>ny web care</a><img src="assets/img/visa.jpg"></div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
